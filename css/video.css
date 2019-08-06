@@ -11,7 +11,11 @@ body{
 }
 /* to make the web page device compatible we use @media  */
 /* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
-@media screen and (max-width: 1810px){
+iframe{
+        width: 70vw;
+        height: 50vh;
+    }
+/* @media screen and (max-width: 1810px){
     iframe{
         width: 70vw;
         height: 50vh;
@@ -41,4 +45,4 @@ body{
         height: 50vh;
     }
 }
-
+ */
