@@ -1,3 +1,5 @@
+/* there is a element with class "outer-contact" in on div element in all web pages and all of them have background image which is fixed
+and it makes parallax effect wherer all other things move ovre that fixed image until its all inner elements not moved up */
 .outer-contact{
     background-image: url("../images/bullet.jpg");
     background-attachment: fixed;
@@ -20,4 +22,26 @@
     transform: translate(-50%,-50%);
     background-color: rgba(126, 107, 25, 0.5);
     color: rgb(209, 208, 208)
+}
+/* to make the web page device compatible we use @media  */
+/* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
+@media screen and (max-width: 1024px){
+    .contact{
+        position: unset;
+        transform: none;
+        width: 100%;
+    }
+    .brands + div{
+        display: none;
+    }
+}
+@media screen and (max-width: 414px){
+    .contact{
+        position: unset;
+        transform: none;
+        width: 100%;
+    }
+    .brands + div{
+        display: none;
+    }
 }

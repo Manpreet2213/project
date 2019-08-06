@@ -1,18 +1,58 @@
+<!-- register page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- linking all css files -->
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/register.css">
+    <!-- using viewport to make it device's dimension compateble -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using google's font api to style our text -->
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title of our website it is gonna be shown on tab of browser -->
     <title>Bajaj's Motorcycle Garage</title>
 </head>
 <body>
     <header class="header">
+            <div class="log">
+                            <!-- here we have created form with action to confirmation.html page -->
+                    <form action="../html/confirmation.html" style="border:1px solid #ccc">
+                        <div class="container">
+                                <label><b>First Name</b></label>
+                                <!-- made a text box which is required means we can't submit without leaving it empty -->
+                                <input type="text" placeholder="Enter First name" name="fname" required>
+                                <label><b>Last Name</b></label>
+                                <!-- made a text box which is required means we can't submit without leaving it empty -->
+                                <input type="text" placeholder="Enter Last Name" name="lname" required>
+                                <label><b>Contact</b></label>
+                                <input type="text" placeholder="Enter Phone Number" name="ph" required>
+                        
+                                <label><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <label><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                </label>
+                                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                        </div>
+                            
+                        <div class="container">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <!-- targetting button to blank page which means the action page of this form will be opening on another tab -->
+                                <button type="submit" class="signupbtn" formtarget="_blank">Register</button>
+                        </div>
+                    </form>
+            </div>
 
     </header>
     <section>
@@ -32,7 +72,9 @@
                 </div>
             </div>
     </section>
-        <nav class="navbar">
+            <!-- navigation using nav element -->
+        <nav class="navbar" style="z-index: 2;">
+            <!-- list of all webpages links of our website -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../html/products.html">Product</a></li>
@@ -40,7 +82,8 @@
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/video.html">Video</a></li>
                     <li><a href="../html/login.html">Log In</a></li>
-                    <li style="background-color:tomato;"><a href="register.html">Register</a></li>
+                    <li style="background-color:tomato;"><!-- it tell us in which page of navigation bar we are exactly in -->
+                        <a href="register.html">Register</a></li>
                 </ul>
         </nav>
 </body>

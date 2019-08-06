@@ -8,4 +8,55 @@
     width: 100%; 
     height: 100%;
     text-align: center;
+}/* this is our id of div tag in index.html file */
+/* here we use css selectors to style the inner elements more easily without giving every inner element unique ids or classes */
+/* #header-message>span means Selects span elements where the parent is a #header-message element */
+#header-message>span
+{
+    font-size:50px;
+    font-family: 'Barrio', cursive;
+    color: whitesmoke;
+    letter-spacing: 10px;
+    position: relative;
 }
+/* here we use pseudo class to style its first child */
+
+#header-message>span:nth-child(1){
+    /* animation is a css way of doing animation  */
+    animation: up;/* animation's element name wherer everthing is specified about animation */
+    animation-duration: 1s;
+}
+/* it creates animation where tht specific element comes from very top to its real position */
+@keyframes up{
+    from{top: -1000px;}
+    to{top:0px;}
+}
+#header-message>span:nth-child(5){
+    animation: down;
+    animation-duration: 1s;
+}
+@keyframes down{
+    from{right: 1000px;}
+    to{right:0px;}
+}
+#header-message>span:nth-child(3){
+    animation: fade;
+    animation-duration: 2s;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#header-message{ 
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 30vh;
+}
+/* to make the web page device compatible we use @media  */
+/* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
+@media screen and (max-width: 414px){
+    #header-message>span{
+        font-size: 20px;
+    }
+}
+

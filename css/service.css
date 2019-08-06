@@ -1,4 +1,40 @@
+*{
+    font-family: 'Barrio', cursive;;
+}
 body{
     margin: 0%;
     padding: 0%;
+}
+#our{
+    color: tomato;
+    font-size: 60px;
+    font-family: 'Barrio', cursive;
+}
+/* styling table element and making all border together */
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+/* styling td element of table and making its content aligned to left */
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+/* styling th element of table */
+th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+/* styling even element of tr of table with background color */
+ tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+/* styling tr element with height 15 vh */
+tr{
+    height: 15vh;
 }

@@ -1,21 +1,77 @@
+<!-- service page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- linking all css files -->
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/outin.css">
+    <!-- using viewport to make it device's dimension compateble -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using google's font api to style our text -->
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title of our website it is gonna be shown on tab of browser -->
     <title>Bajaj's Motorcycle Garage</title>
 </head>
 <body>
     <header class="header">
-
+            <div id="header-message">
+            <span>Book Now</span><br>
+            <span>Our Services</span><br>
+            <span></span>
+        </div> 
     </header>
     <section>
+        <div class="outer">
+            <!-- <div class="service-1">
+                <h1 id="our">Our Services</h1>
+            </div> -->
+            <div class="inner">
+                <table class="table">
+                    <tr>
+                        <th colspan="3">Now Available</th>
+                    </tr>
+                    <tr>
+                        <td>Scheduled Maintenance<br> 
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corrupti repellendus a maxime, aliquid ea iusto fugit optio aperiam dolor iure deleniti sed quas culpa eveniet dicta neque cum ullam!
+                        </td>
+                        <td>1 hr 30 min</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                            <td>Scheduled Maintenance<br> 
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corrupti repellendus a maxime, aliquid ea iusto fugit optio aperiam dolor iure deleniti sed quas culpa eveniet dicta neque cum ullam!
+                            </td>
+                            <td>1 hr 30 min</td>
+                            <td>$45</td>
+                    </tr>
+                    <tr>
+                            <td>Scheduled Maintenance<br> 
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corrupti repellendus a maxime, aliquid ea iusto fugit optio aperiam dolor iure deleniti sed quas culpa eveniet dicta neque cum ullam!
+                            </td>
+                            <td>1 hr 30 min</td>
+                            <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled Maintenance<br> 
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corrupti repellendus a maxime, aliquid ea iusto fugit optio aperiam dolor iure deleniti sed quas culpa eveniet dicta neque cum ullam!
+                        </td>
+                        <td>1 hr 30 min</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                            <td>Scheduled Maintenance<br> 
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat corrupti repellendus a maxime, aliquid ea iusto fugit optio aperiam dolor iure deleniti sed quas culpa eveniet dicta neque cum ullam!
+                            </td>
+                            <td>1 hr 30 min</td>
+                            <td>$45</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <div class="outer-contact">
             <div class="contact">
                     <h1>Contact US</h1>
@@ -32,11 +88,14 @@
                 </div>
             </div>
     </section>
+            <!-- navigation using nav element -->
         <nav class="navbar">
+                        <!-- list of all webpages links of our website -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../html/products.html">Product</a></li>
-                    <li style="background-color:tomato;"><a href="service.html">Service</a></li>
+                    <li style="background-color:tomato;"><!-- it tell us in which page of navigation bar we are exactly in -->
+                        <a href="service.html">Service</a></li>
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/video.html">Video</a></li>
                     <li><a href="../html/login.html">Log In</a></li>

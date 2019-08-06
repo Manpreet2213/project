@@ -1,21 +1,99 @@
+<!-- products page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        <!-- linking css files to thiss web page -->
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/outin.css">
+    <!-- using viewport to make it device's dimension compateble -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using google's font api to style our text -->
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title of our website it is gonna be shown on tab of browser -->
     <title>Bajaj's Motorcycle Garage</title>
 </head>
 <body>
+    <!-- header element -->
     <header class="header">
-
+        <div id="header-message">
+                <!-- <span>WELCOME TO</span><br> -->
+                <span>Products</span><br>
+                <!-- <span>BIKE GARAGE</span> -->
+            </div>
     </header>
     <section>
+        <!-- here we have created a card like element to show the products with more beautiful way -->
+        <div class="outer">
+            <div class="inner">
+                <div class="card">
+                    <!-- using img element to set up iamge with 100% width -->
+                    <img src="../images/engineoil.jpg" alt="engineoil" style="width:100%">
+                    <!-- heading of card after image -->
+                    <h1>Engine oil</h1>
+                    <p class="price">$44.99</p>
+                    <!-- description of product -->
+                    <p>
+                        This item is a universal/custom fit component, and does not have any direct standard/OEM model application.</p>
+                </div>
+                <div class="card">
+                        <img src="../images/exhaust.jpg" alt="exhaust" style="width:100%">
+                        <h1>Exhaust</h1>
+                        <p class="price">$449.99</p>
+                        <p>
+                                Give your Harley-Davidson Sportster a cool look plus a rich, deep sound with the complete Vance & Hines Shortshots Staggered Exhaust system.
+                        </p>
+                </div>
+                <div class="card">
+                        <img src="../images/battry.jpg" alt="battery" style="width:100%">
+                        <h1>Twin Power High Performance AGM Battery</h1>
+                        <p class="price">$128.99</p>
+                        <p>
+                            <ul>
+                                <li>
+                                        AGM (Absorbed Glass Mat) separators with superior grid and component designs    
+                                </li>
+                                <li>
+                                        Improved charge recovery capability from a deeply discharged condition
+                                </li>
+                                <li>
+                                    Longer shelf life
+                                </li>
+                            </ul>
+                            
+                            
+                        </p>
+                </div>
+                <div class="card">
+                        <img src="../images/engineoil.jpg" alt="engineoil" style="width:100%">
+                        <h1>Twin Power Synthetic 20W50 Engine Oil Gallon</h1>
+                        <p class="price">$44.99</p>
+                        <p>
+                            This item is a universal/custom fit component, and does not have any direct standard/OEM model application.</p>
+                </div>
+                <div class="card">
+                        <img src="../images/oilkit.jpg" alt="engineoil" style="width:100%">
+                        <h1>Twin Power Synthetic Quick Change Oil Change Kit</h1>
+                        <p class="price">$56.99</p>
+                        <p>
+                                Specially formulated for American V-Twins
+                                Meets or exceeds all O.E.M. specifications
+                                Specially formulated to protect American V-Twin motorcycle engines
+                        </p>
+                </div>
+                <div class="card">
+                        <img src="../images/starter.jpg" alt="engineoil" style="width:100%">
+                        <h1>Arrowhead Electrical Products 2.4KW Starter Chrome</h1>
+                        <p class="price">$44.99</p>
+                        <p>
+                                1.6, 1.8 and 2.0 kW starters will require the use of starter spacer block 383-235, 2 gaskets, 433-891 and bolts that are 1 3/8" longer than stock to complete installation when used on 1993-2006 FLT models, sold separately.
+                        </p>
+                </div>
+            </div>
+        </div>
         <div class="outer-contact">
             <div class="contact">
                     <h1>Contact US</h1>
@@ -32,10 +110,13 @@
                 </div>
             </div>
     </section>
+        <!-- navigation using nav element -->
         <nav class="navbar">
+                        <!-- list of all webpages links of our website -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li style="background-color:tomato;"><a href="products.html">Product</a></li>
+                    <li style="background-color:tomato;"><!-- it tell us in which page of navigation bar we are exactly in -->
+                        <a href="products.html">Product</a></li>
                     <li><a href="../html/service.html">Service</a></li>
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/video.html">Video</a></li>

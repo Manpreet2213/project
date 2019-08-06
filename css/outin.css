@@ -1,0 +1,14 @@
+.outer{
+    text-align: center;
+    background-image: url(../images/blacked-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inner{
+    background-color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    top: -50vh;
+}

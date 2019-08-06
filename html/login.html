@@ -1,3 +1,4 @@
+<!-- login page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,40 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/login.css">
+    <!-- using viewport to make it device's dimension compateble -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using google's font api to style our text -->
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title of our website it is gonna be shown on tab of browser -->
     <title>Bajaj's Motorcycle Garage</title>
 </head>
 <body>
+        <!-- header element -->
     <header class="header">
-
+        <div class="log">
+            <!-- here we have created form with action to index.html page -->
+                <form action="../index.html">
+                    <div class="container">
+                        <!-- label of username -->
+                      <label><b>Username</b></label>
+                      <!-- made a text box which is required means we can't submit without leaving it empty -->
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                    <!-- made a text box which is required means we can't submit without leaving it empty -->
+                      <label><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                    <!-- submit button   -->
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+        </div>
     </header>
     <section>
         <div class="outer-contact">
@@ -32,14 +59,18 @@
                 </div>
             </div>
     </section>
+        <!-- navigation using nav element -->
         <nav class="navbar">
+                        <!-- list of all webpages links of our website -->
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../html/products.html">Product</a></li>
                     <li><a href="../html/service.html">Service</a></li>
                     <li><a href="../html/about.html">About</a></li>
                     <li><a href="../html/video.html">Video</a></li>
-                    <li style="background-color:tomato;"><a href="login.html">Log In</a></li>
+                     
+                    <li style="background-color:tomato;"><!-- it tell us in which page of navigation bar we are exactly in -->
+                        <a href="login.html">Log In</a></li>
                     <li><a href="../html/register.html">Register</a></li>
                 </ul>
         </nav>

@@ -1,3 +1,4 @@
+/* navbar class of nav element */
 .navbar{
     text-align: center;
     position: sticky;
@@ -6,17 +7,21 @@
     animation: down;
     animation-duration: 1s;
 }
+/* styling unordered list where parent element has navbar class */
 .navbar>ul{
     margin: 0%;
     padding: 0%;
 }
+/* styling all list element with no bullets front of them */
 li{
     list-style-type: none;
 }
+/* styling all list elements where unordered list is the parent and all of them are inside .navbar class's element */
 .navbar ul>li{
     margin: 0%;
     display: inline-block;
 }
+/* styling all links where parent is any list element and all of them inside .navbar's element */
 .navbar li>a{
     padding: 10px;
     display: inline-block;
@@ -25,6 +30,40 @@ li{
     font-size: 1.3vw;
     color: whitesmoke;
 }
+/* giving hovre effects to all links that are inside .navbar class */
 .navbar a:hover{
     color:slategrey;
 }
+/* to make the web page device compatible we use @media  */
+/* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
+@media screen and (max-width: 1810px){
+    .navbar li>a{
+        font-size: 1.3vw;
+    }
+}
+@media screen and (max-width: 1320px){
+    .navbar li>a{
+        font-size: 1.3vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    .navbar li>a{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar li>a{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 414px){
+    .navbar li>a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 375px){
+    .navbar li>a{
+        font-size: 15px;
+    }
+}
+

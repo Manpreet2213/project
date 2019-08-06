@@ -1,45 +1,11 @@
+/* this gives our page a margin and padding of 0 */
 body{
     margin: 0%;
     padding: 0%;
 }
-#header-message>span
-{
-    font-size:4vw;
-    font-family: 'Barrio', cursive;
-    color: whitesmoke;
-    letter-spacing: 10px;
-    position: relative;
-}
-#header-message>span:nth-child(1){
-    animation: up;
-    animation-duration: 1s;
-}
-@keyframes up{
-    from{top: -1000px;}
-    to{top:0px;}
-}
-#header-message>span:nth-child(5){
-    animation: down;
-    animation-duration: 1s;
-}
-@keyframes down{
-    from{right: 1000px;}
-    to{right:0px;}
-}
-#header-message>span:nth-child(3){
-    animation: fade;
-    animation-duration: 2s;
-}
-@keyframes fade{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-#header-message{ 
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    top: 30vh;
-}
 
+/* creating backgroud image that is fixed  */
+/* fixed backgroud image creates parallax effect */
 .img{
     background-image: url("..//images/oilchange.jpg");
     background-repeat: no-repeat;
@@ -47,6 +13,7 @@ body{
     background-position: center;
     min-height: 300px;
 }
+/* here we use grid layout to style our element */
 .services{
     display: grid;
     justify-content: space-around;
@@ -57,6 +24,7 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
 .services > div{
     margin: 30px;
     text-align: center;
@@ -89,6 +57,8 @@ body{
     bottom: 0%;
     transition: 1s ease-out;
 }
+/* here we use hover pseudo class in which something will happpen when we hover on it */
+/* and that something over here is opacity of text */
 .overlay2:hover #c2, .overlay1:hover #c1{
     opacity: 1;
 }
@@ -102,10 +72,11 @@ body{
     position: absolute;
     left: 15%;
     top: -10%;
+    transform: translate(-50%-50%);
     text-align: center;
 }
 .brands>ul{
-    display: inline-block;
+    display:block;
     margin: 0%;
     padding: 20px;
     overflow: hidden;
@@ -117,6 +88,52 @@ body{
     border: 1px solid grey;
     background-color: white;
 
+}
+/* to make the web page device compatible we use @media  */
+/* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
+@media screen and (max-width: 1024px){
+    .services{
+        display: inline-block;
+    }
+    .services>div{
+        font-size: 35px;
+    }
+    .brands{
+        position: unset;
+    }
+}
+@media screen and (max-width: 768px){
+    .services{
+        display: inline-block;
+    }
+    .services>div{
+        font-size: 30px;
+    }
+    .brands{
+        position: unset;
+    }
+}
+@media screen and (max-width: 414px){
+    .services{
+        display: inline-block;
+    }
+    .services>div{
+        font-size: 20px;
+    }
+    .brands{
+        position: unset;
+    }
+}
+@media screen and (max-width: 375px){
+    .services{
+        display: inline-block;
+    }
+    .services>div{
+        font-size: 25px;
+    }
+    .brands{
+        position: unset;
+    }
 }
 
 

@@ -2,3 +2,111 @@ body{
     margin: 0%;
     padding: 0%;
 }
+/* here we have gave style to div element with log class , have made4 it inline block  */
+
+.log{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-40%);
+    width: 600px;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+/* here we have used css selector where we can specificly use an element with specific conditions like in following
+we have used input which have type equal to text and type equal to password */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+   /* styled button */ 
+button:hover {
+    opacity: 0.8;
+}
+  
+.cancelbtn {
+    width: auto;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+    margin: 10px;
+    float: left;
+    width: 45%;
+}
+.container {
+    padding: 16px;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* to make the web page device compatible we use @media  */
+/* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
+@media screen and (max-width: 1810px){
+    .header{
+        font-size: 1.3vw;
+    }
+}
+@media screen and (max-width: 1320px){
+    .header{
+        font-size: 45px;
+    }
+    .log{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .header{
+        font-size: 35px;
+    }
+    .log{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        font-size: 25px;
+    }
+    .log{
+        width: 100%;
+    }
+}
+@media screen and (width: 620px){
+    .header{
+        font-size: 25px;
+    }
+    .log{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 414px){
+    .header{
+        font-size: 20px;
+    }
+    .log{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px){
+    .header{
+        font-size: 15px;
+    }
+    .log{
+        width: 100%;
+    }   
+}
