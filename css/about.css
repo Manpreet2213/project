@@ -6,31 +6,37 @@ body{
 /* here we have used different sizes' screen to make it compateble with device like iphonex,ipad galaxy s5 */
 @media screen and (max-width: 1810px){
     .inner{
-        font-size: 1.3vw;
+        font-size: 55px;
+        font-family: 'Barrio', cursive;
     }
 }
 @media screen and (max-width: 1320px){
     .inner{
         font-size: 45px;
+        font-family: 'Barrio', cursive;
     }
 }
 @media screen and (max-width: 1024px){
     .inner{
         font-size: 35px;
+        font-family: 'Barrio', cursive;
     }
 }
 @media screen and (max-width: 768px){
     .inner{
         font-size: 25px;
+        font-family: 'Barrio', cursive;
     }
 }
 @media screen and (max-width: 414px){
     .inner{
         font-size: 20px;
+        font-family: 'Barrio', cursive;
     }
 }
 @media screen and (max-width: 375px){
     .inner{
         font-size: 15px;
+        font-family: 'Barrio', cursive;
     }
 }
